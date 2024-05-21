@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  jira:
+    image: atlassian/jira-software:latest
+    container_name: jira_server
+    ports:
+      - "5000:5000"
+
+
