@@ -1,4 +1,7 @@
 DevOps task - methoda 
+
+When a git branch is merged into master branch, the job extract the jira issue key from the branch name, and move the jira issue to done.
+
 The repository contains:
 1. Jenkinsfile
 2. Tests files
