@@ -34,7 +34,7 @@ pipeline {
                     def result = jiraGetIssue idOrKey: issue_key, failOnError:false
 
                     // status change
-                    def transition_to_closed_jira_id = 31 // you need to find out your ID
+                    def transition_to_closed_jira_id = 31 //Id for done
                     def transitionInput = [ transition: [ id: transition_to_closed_jira_id ] ]
                     jiraTransitionIssue idOrKey: issue_key, input: transitionInput
                     }
